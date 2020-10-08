@@ -17,7 +17,7 @@ async def on_ready():
     print(app.user.name)
     print(app.user.id)
     print("==========")
-    game = discord.Game("봇 테스트중")
+    game = discord.Game("24h host powerd by HEROKU")
     await app.change_presence(status=discord.Status.online, activity=game)
 
 
