@@ -1,5 +1,6 @@
 import asyncio
 import discord
+import os
 
 
 from discord.ext import commands
@@ -7,7 +8,6 @@ from discord.ext import commands
 app = commands.Bot(command_prefix='=')
 client = commands.Bot(command_prefix = '=')
 
-token = "NzIxMzgzMDkxNTMyMzMzMTc2.XuTuWw.rFCmOEU-uvxN4Ncd262m0YuQ5B0"
 calcResult = 0
 calcResult1 = 0
 
@@ -129,5 +129,5 @@ async def on_message(message):
 
 
 
-
-app.run(token)
+access_token = os.environ["BOT_TOKEN"]
+app.run(access_token)
