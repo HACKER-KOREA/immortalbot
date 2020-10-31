@@ -50,7 +50,12 @@ async def on_message(message):
             await message.channel.send("숫자로 넣어주세요.")
         except ZeroDivisionError:
             await message.channel.send("0으로 나눌수 없습니다.")
+    
+    if message.content.startswith('=invitelink'): # message 의 contest 가 '!커맨드' 로 시작할때 
+       await channel.send('https://discord.com/oauth2/authorize?client_id=721383091532333176&scope=bot&permissions=8')
 
+    if message.content.startswith('=초대링크'): # message 의 contest 가 '!커맨드' 로 시작할때 
+       await channel.send('https://discord.com/oauth2/authorize?client_id=721383091532333176&scope=bot&permissions=8')
 
     if message.content.startswith("=calc"):
         global calcResult1
