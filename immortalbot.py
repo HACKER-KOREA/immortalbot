@@ -1,4 +1,4 @@
-import asyncio
+zimport asyncio
 import discord
 import os
 
@@ -17,7 +17,7 @@ async def on_ready():
     print(app.user.name)
     print(app.user.id)
     print("==========")
-    game = discord.Game("24h host powerd by HEROKU")
+    game = discord.Game("안녕하세요 쿠다봇이에요!")
     await app.change_presence(status=discord.Status.online, activity=game)
 
 
